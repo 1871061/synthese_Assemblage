@@ -1,0 +1,57 @@
+//----------------------------------------------------//
+//                                                    //
+//                   // ZONES //                      //
+//                   _zones.scss                      //
+//----------------------------------------------------//
+
+/*////[Les zones de contenu]
+________________________________________________________*/
+/*[Code générique des zones de contenu]*/
+#produits, #heures, #promotion, #commande, #livraison, #entreprise, #footer{
+    display: flex;
+    align-items: center;
+
+     & header{
+        & h2{
+            font-family: Studio Gothic Alternate Trial;
+            font-size: 2.4em;
+            color:var(--blanc);
+        }
+     }
+                    
+}
+
+#produits{
+    grid-area: produits;
+    background-color: var(--charcoal);
+}
+
+#heures{
+    grid-area: heures;
+    background-color: var(--noir);
+}
+
+#promotion{
+    grid-area: promotion;
+    background-color: var(--charcoal);
+}
+
+#commande{
+    grid-area: commande;
+    background-color: var(--noir);
+}
+
+#livraison{
+    grid-area: livraison;
+    background-color: var(--charcoal);
+}
+
+#entreprise{
+    grid-area: entreprise;
+    background-color: var(--noir);
+}
+
+#footer{
+    grid-area: footer;
+    background-color: var(--charcoal);
+}

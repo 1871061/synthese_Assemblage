@@ -1,0 +1,21 @@
+//----------------------------------------------------//
+//                                                    //
+//                // GRILLE DESKTOP //                 //
+//               _grilleDesktop.scss                   //
+//----------------------------------------------------//
+
+/*////[Grille principale]
+________________________________________________________*/
+div.interface{
+    display:grid;
+    grid-template-rows:280px auto auto auto auto;
+    grid-template-areas:
+        'produits'
+        'heures'
+        'promotion'
+        'commande'
+        'livraison'
+        'entreprise'
+        'footer'
+    ;
+}

@@ -1,0 +1,121 @@
+@charset "UTF-8";
+/*////[Variable de couleurs]
+________________________________________________________*/
+:root {
+  --blanc:#fff;
+  --charcoal: hsl(0, 0%, 5%);
+  --noir: hsl(0, 0%, 3%);
+}
+
+/*////[Reset du code HTML]
+________________________________________________________*/
+/*[Le document en général]*/
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+/*[Affecte tous les enfants]*/
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+}
+
+/*[Reset des liens]*/
+a:link,
+a:visited {
+  text-decoration: none;
+  color: inherit;
+}
+
+/*[Reset des listes à l'intérieur d'un nav]*/
+nav ul {
+  list-style: none;
+}
+
+/*////[Grille principale]
+________________________________________________________*/
+div.interface {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 280px auto auto auto auto;
+      grid-template-rows: 280px auto auto auto auto;
+      grid-template-areas: 'produits' 'heures' 'promotion' 'commande' 'livraison' 'entreprise' 'footer';
+}
+
+/*////[Navigation principale]
+________________________________________________________*/
+/*////[Les zones de contenu]
+________________________________________________________*/
+/*[Code générique des zones de contenu]*/
+#produits, #heures, #promotion, #commande, #livraison, #entreprise {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#produits header h2, #heures header h2, #promotion header h2, #commande header h2, #livraison header h2, #entreprise header h2 {
+  font-family: Studio Gothic Alternate Trial;
+  font-size: 2.4em;
+  color: var(--blanc);
+}
+
+#produits {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: produits;
+  background-color: var(--charcoal);
+}
+
+#heures {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: heures;
+  background-color: var(--noir);
+}
+
+#promotion {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: promotion;
+  background-color: var(--charcoal);
+}
+
+#commande {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  grid-area: commande;
+  background-color: var(--noir);
+}
+
+#livraison {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+  grid-area: livraison;
+  background-color: var(--charcoal);
+}
+
+#entreprise {
+  -ms-grid-row: 6;
+  -ms-grid-column: 1;
+  grid-area: entreprise;
+  background-color: var(--noir);
+}
+
+#footer {
+  -ms-grid-row: 7;
+  -ms-grid-column: 1;
+  grid-area: footer;
+  background-color: var(--charcoal);
+}
+/*# sourceMappingURL=style.css.map */
