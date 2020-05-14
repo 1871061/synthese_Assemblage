@@ -5,6 +5,7 @@ ________________________________________________________*/
   --blanc:#fff;
   --charcoal: hsl(0, 0%, 5%);
   --noir: hsl(0, 0%, 3%);
+  --or: hsl(43, 95%, 49%);
 }
 
 /*////[Reset du code HTML]
@@ -45,9 +46,79 @@ ________________________________________________________*/
 div.interface {
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: 280px auto auto auto auto;
-      grid-template-rows: 280px auto auto auto auto;
+  -ms-grid-rows: auto auto auto auto auto auto auto;
+      grid-template-rows: auto auto auto auto auto auto auto;
       grid-template-areas: 'produits' 'heures' 'promotion' 'commande' 'livraison' 'entreprise' 'footer';
+}
+
+.hero {
+  background-color: var(--noir);
+}
+
+.hero ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.hero ul li {
+  color: var(--blanc);
+  padding: .5em;
+}
+
+.teteAffiche {
+  height: 80vh;
+  background-image: url(/images/piano.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.teteAffiche nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 2em;
+}
+
+.teteAffiche nav ul li {
+  color: var(--blanc);
+  padding: 1em;
+  margin-top: 2.2em;
+}
+
+.teteAffiche nav img {
+  width: 20%;
+  margin-right: 4em;
+}
+
+#produits .contenu {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  text-align: center;
+  padding: 2em;
+}
+
+#produits .contenu img {
+  width: 250px;
+  height: 300px;
+  margin: 3em;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 /*////[Navigation principale]
@@ -55,16 +126,18 @@ ________________________________________________________*/
 /*////[Les zones de contenu]
 ________________________________________________________*/
 /*[Code générique des zones de contenu]*/
-#produits, #heures, #promotion, #commande, #livraison, #entreprise {
+#produits, #heures, #promotion, #commande, #livraison, #entreprise, #footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 2em;
 }
 
-#produits header h2, #heures header h2, #promotion header h2, #commande header h2, #livraison header h2, #entreprise header h2 {
+#produits header h2, #heures header h2, #promotion header h2, #commande header h2, #livraison header h2, #entreprise header h2, #footer header h2 {
   font-family: Studio Gothic Alternate Trial;
   font-size: 2.4em;
   color: var(--blanc);
@@ -117,5 +190,41 @@ ________________________________________________________*/
   -ms-grid-column: 1;
   grid-area: footer;
   background-color: var(--charcoal);
+}
+
+p {
+  color: var(--blanc);
+}
+
+button, .button {
+  background-color: var(--or);
+  border: 2px solid var(--blanc);
+  padding: .3em;
+  width: 12em;
+  font-family: Studio Gothic Alternate Trial;
+  color: var(--blanc);
+  font-size: 1.5em;
+  text-transform: capitalize;
+}
+
+header > p {
+  width: 60%;
+  font-size: .8em;
+}
+
+#heures div {
+  padding: 5em;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+#heures div p {
+  font-size: 1.5em;
+  font-family: Studio Gothic Alternate Trial;
+}
+
+#heures div p span {
+  font-family: Baskerville Old Face;
 }
 /*# sourceMappingURL=style.css.map */

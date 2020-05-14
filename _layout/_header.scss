@@ -1,0 +1,44 @@
+.hero{
+    
+    background-color: var(--noir);
+
+    & ul{
+        @include FlexR;
+        justify-content: flex-end;
+
+        & li{
+            color: var(--blanc);
+            padding: .5em;
+        }
+    }
+}
+
+.teteAffiche{
+    height: 80vh;
+    background-image: url(/images/piano.jpg);
+    background-position: center;
+    background-size: cover;
+   
+
+    & nav{
+
+        & ul{
+            @include FlexR;
+            justify-content: center;
+            padding-top: 2em;
+            
+
+            & li{
+                color: var(--blanc);
+                padding: 1em;
+                margin-top: 2.2em;
+                
+            }
+        }
+
+        & img{
+            width: 20%;
+            margin-right: 4em;
+        }
+    }
+}

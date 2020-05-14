@@ -21,17 +21,20 @@
         </nav> 
     </header>
 
-    <nav>
-        <ul>
-            <a href="#produits"><li>Nos produits</li></a>
-            <a href="#heures"><li>Heures d'ouverture</li></a>
-            <a href="#promotion"><li>Promotion</li></a>
-            <a href="#commande"><li>Comment Commander</li></a>        
-            <a href="#livraison"><li>Livraison</li></a>    
-            <a href="#entreprise"><li>L'entreprise</li></a>
-                
-        </ul>
-   </nav>
+    <section class="teteAffiche">
+        <nav>
+            <ul>
+                <img src="/images/Logo.svg" alt="">
+                <li><a href="#produits">Nos produits</a></li>
+                <li><a href="#heures">Heures d'ouverture</a></li>
+                <li><a href="#promotion">Promotion</a></li>
+                <li><a href="#commande">Comment Commander</a></li>        
+                <li><a href="#livraison">Livraison</a></li>    
+                <li><a href="#entreprise">L'entreprise</a></li>
+                    
+            </ul>
+       </nav>
+    </section>
 
    <div class="interface">
     <section id="produits">
@@ -39,10 +42,14 @@
             <h2>Nos produits</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.  </p>
         </header>
-        <img src="/images/guitar.jpg" alt="" width="200px" height="auto">
-        <img src="/images/violon.jpg" alt="" width="400px" height="auto">
-        <img src="/images/cello.jpg" alt="" width="200px" height="auto">
-        <a href="#">En savoir plus</a>
+        <div class="contenu">
+            <div class="carousel">
+                <img src="/images/guitar.jpg" alt="">
+                <img src="/images/violon.jpg" alt="">
+                <img src="/images/cello.jpg" alt="">
+            </div>
+            <button><a href="#">En savoir plus</a></button>
+        </div>
     </section>
 
     <section id="heures">
@@ -50,13 +57,15 @@
             <h2>Heures d'ouverture</h2>
             <p>Curabitur sollicitudin viverra tortor, pharetra dignissim velit aliquet facilisis. Ut cursus eros ut ex congue fermentum. Duis fermentum porta fringilla. Integer lacinia quam est, a fermentum mi auctor a. </p>
         </header>
-        <p>LUNDI: <span>8H à 18H</span></p>
-        <p>MARDI: <span>8H à 20H</span></p>
-        <p>MERCREDI: <span>8H à 20H</span></p>
-        <p>JEUDI: <span>8H à 20H</span></p>
-        <p>VENDREDI: <span>8H à 20H</span></p>
-        <p>SAMEDI: <span>8H à 18H</span></p>
-        <p>DIMANCHE: <span>8H à 17H</span></p>
+        <div>
+            <p>LUNDI: <span>8H à 18H</span></p>
+            <p>MARDI: <span>8H à 20H</span></p>
+            <p>MERCREDI: <span>8H à 20H</span></p>
+            <p>JEUDI: <span>8H à 20H</span></p>
+            <p>VENDREDI: <span>8H à 20H</span></p>
+            <p>SAMEDI: <span>8H à 18H</span></p>
+            <p>DIMANCHE: <span>8H à 17H</span></p>
+        </div>
     </section>
 
     <section id="promotion">
@@ -66,6 +75,7 @@
         </header>
         <p>Nous sommes tous à l’intérieur pendant ce temps de crise, alors pourquoi ne pas apprendre à jouer de l’instrument que vous rêver de jouer depuis des années?</p>
         <p>À l’achat d’un <span>nouvel instrument</span> de musique obtenez l’accès gratuit pendant <span>3 mois</span> à des cours en ligne! Devenir un virtuose n’aura jamais été aussi simple!</p>
+        <img src="/images/partition.jpg" alt="">
         
     </section>
 
@@ -92,7 +102,7 @@
         <p>10KM</p>
         <form action="">
             <input type="text">
-            <input type="submit" value="Vérifier">
+            <input type="submit" class="button" value="Vérifier">
         </form>
     </section>
 
@@ -119,7 +129,7 @@
         <input type="text" value="Nom">
         <input type="text" value="Courriel">
         <textarea name="Message" id="message" cols="30" rows="10">Message</textarea>
-        <input type="submit">
+        <input type="submit" class="button">
        </form>
    </footer>
     <script src="js/eventAnimationScript.js"></script>

@@ -8,3 +8,21 @@
 // - - - - - - - - - - - - - - - - - - - - - - - - - - -
 // Importation
 // - - - - - - - - - - - - - - - - - - - - - - - - - - -
+@mixin FlexC{
+    display: flex;
+    flex-direction: column;
+}
+@mixin FlexR{
+    display: flex;
+    flex-direction: row;
+}
+@mixin button {
+    background-color: var(--or);
+    border: 2px solid var(--blanc);
+    padding: .3em;
+    width: 12em;
+    font-family: Studio Gothic Alternate Trial;
+    color: var(--blanc);
+    font-size: 1.5em;
+    text-transform: capitalize;
+}

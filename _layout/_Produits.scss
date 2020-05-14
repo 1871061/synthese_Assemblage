@@ -1,0 +1,15 @@
+#produits{
+
+    & .contenu{
+        align-self: center;
+        text-align: center;
+        padding: 2em;
+
+        & img{
+            width: 250px;
+            height: 300px;
+            margin: 3em;
+            object-fit: cover;
+        }
+    }
+}

@@ -9,7 +9,8 @@ ________________________________________________________*/
 /*[Code générique des zones de contenu]*/
 #produits, #heures, #promotion, #commande, #livraison, #entreprise, #footer{
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    padding: 2em;
 
      & header{
         & h2{

@@ -8,7 +8,7 @@
 ________________________________________________________*/
 div.interface{
     display:grid;
-    grid-template-rows:280px auto auto auto auto;
+    grid-template-rows:auto auto auto auto auto auto auto;
     grid-template-areas:
         'produits'
         'heures'
