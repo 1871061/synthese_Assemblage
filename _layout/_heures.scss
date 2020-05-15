@@ -1,15 +1,16 @@
 #heures{
     
-    & div{
+    & .contenu{
         padding: 5em;
         align-self: center;
         
         & p{
-            font-size: 1.5em;
-            font-family: Studio Gothic Alternate Trial;
+            font-size: 2em;
+            text-align: right;
+            padding: .1em;
 
             & span{
-                font-family: Baskerville Old Face;
+                color: var(--or);
             }
         }
     }

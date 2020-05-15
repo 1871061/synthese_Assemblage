@@ -6,16 +6,17 @@
 
 /*////[Les zones de contenu]
 ________________________________________________________*/
-/*[Code générique des zones de contenu]*/
+
 #produits, #heures, #promotion, #commande, #livraison, #entreprise, #footer{
     display: flex;
     flex-direction: column;
-    padding: 2em;
+    padding: 8em;
 
      & header{
         & h2{
-            font-family: Studio Gothic Alternate Trial;
-            font-size: 2.4em;
+            font-family: 'Great Vibes', cursive;
+            font-weight: 300;
+            font-size: 5em;
             color:var(--blanc);
         }
      }

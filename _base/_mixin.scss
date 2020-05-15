@@ -21,8 +21,13 @@
     border: 2px solid var(--blanc);
     padding: .3em;
     width: 12em;
-    font-family: Studio Gothic Alternate Trial;
+    font-family: 'Quicksand', sans-serif;
     color: var(--blanc);
     font-size: 1.5em;
     text-transform: capitalize;
+
+        &:hover{
+            background-color: var(--blanc);
+            color: var(--or);
+        }
 }

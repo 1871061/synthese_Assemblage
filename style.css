@@ -73,6 +73,24 @@ div.interface {
   padding: .5em;
 }
 
+#produits .contenu {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  text-align: center;
+  padding: 2em;
+}
+
+#produits .contenu img {
+  width: 250px;
+  height: 300px;
+  margin: 3em;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+/*////[Navigation principale]
+________________________________________________________*/
 .teteAffiche {
   height: 80vh;
   background-image: url(/images/piano.jpg);
@@ -96,8 +114,9 @@ div.interface {
 
 .teteAffiche nav ul li {
   color: var(--blanc);
-  padding: 1em;
-  margin-top: 2.2em;
+  padding: .8em;
+  margin-top: 5em;
+  font-size: 1.2em;
 }
 
 .teteAffiche nav img {
@@ -105,27 +124,12 @@ div.interface {
   margin-right: 4em;
 }
 
-#produits .contenu {
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-  text-align: center;
-  padding: 2em;
+.teteAffiche nav a:hover {
+  border-bottom: 1px solid var(--or);
 }
 
-#produits .contenu img {
-  width: 250px;
-  height: 300px;
-  margin: 3em;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-/*////[Navigation principale]
-________________________________________________________*/
 /*////[Les zones de contenu]
 ________________________________________________________*/
-/*[Code générique des zones de contenu]*/
 #produits, #heures, #promotion, #commande, #livraison, #entreprise, #footer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -134,12 +138,13 @@ ________________________________________________________*/
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 2em;
+  padding: 8em;
 }
 
 #produits header h2, #heures header h2, #promotion header h2, #commande header h2, #livraison header h2, #entreprise header h2, #footer header h2 {
-  font-family: Studio Gothic Alternate Trial;
-  font-size: 2.4em;
+  font-family: 'Great Vibes', cursive;
+  font-weight: 300;
+  font-size: 5em;
   color: var(--blanc);
 }
 
@@ -194,6 +199,7 @@ ________________________________________________________*/
 
 p {
   color: var(--blanc);
+  font-family: 'Quicksand', sans-serif;
 }
 
 button, .button {
@@ -201,30 +207,164 @@ button, .button {
   border: 2px solid var(--blanc);
   padding: .3em;
   width: 12em;
-  font-family: Studio Gothic Alternate Trial;
+  font-family: 'Quicksand', sans-serif;
   color: var(--blanc);
   font-size: 1.5em;
   text-transform: capitalize;
 }
 
-header > p {
-  width: 60%;
-  font-size: .8em;
+button:hover, .button:hover {
+  background-color: var(--blanc);
+  color: var(--or);
 }
 
-#heures div {
+header > p {
+  width: 50%;
+  font-size: 1.1em;
+}
+
+form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+form input, form textarea {
+  margin-top: .7em;
+  padding: .7em;
+  resize: none;
+}
+
+#heures .contenu {
   padding: 5em;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
 }
 
-#heures div p {
-  font-size: 1.5em;
-  font-family: Studio Gothic Alternate Trial;
+#heures .contenu p {
+  font-size: 2em;
+  text-align: right;
+  padding: .1em;
 }
 
-#heures div p span {
-  font-family: Baskerville Old Face;
+#heures .contenu p span {
+  color: var(--or);
+}
+
+#promotion {
+  position: relative;
+}
+
+#promotion .contenu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+#promotion .contenu p {
+  margin: auto;
+  margin-right: 12em;
+  padding: 4em;
+  font-size: 1.5em;
+}
+
+#promotion .contenu p span {
+  color: var(--or);
+  font-size: 1.6em;
+}
+
+#promotion img {
+  position: absolute;
+  -o-object-fit: cover;
+     object-fit: cover;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 20em;
+}
+
+#commande ul {
+  color: var(--blanc);
+  list-style-type: decimal;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  padding: 3em;
+  font-size: 1.5em;
+  list-style-position: inside;
+}
+
+#commande ul li {
+  padding: 1.4em;
+  border-left: 2px solid var(--or);
+  border-right: 2px solid var(--or);
+  border-radius: 30px;
+}
+
+#livraison .contenu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+#livraison .contenu div {
+  padding: 3em;
+  margin-left: 5em;
+}
+
+#livraison .contenu div form {
+  width: 18em;
+  margin-right: auto;
+  margin-top: .9em;
+}
+
+#livraison .contenu div p {
+  font-size: 3em;
+  text-align: left;
+}
+
+#livraison .contenu div p span {
+  border-bottom: 2px solid var(--or);
+}
+
+#livraison .contenu img {
+  width: 30em;
+  height: auto;
+  margin-top: 2em;
+}
+
+#entreprise .contenu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+#entreprise .contenu p {
+  margin: auto;
+  font-size: 1.2em;
+  padding: 0 20em;
+}
+
+#entreprise .contenu img {
+  width: 30em;
+  height: auto;
+  margin-top: 2em;
 }
 /*# sourceMappingURL=style.css.map */

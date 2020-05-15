@@ -6,5 +6,35 @@
 
 /*////[Navigation principale]
 ________________________________________________________*/
+.teteAffiche{
+    height: 80vh;
+    background-image: url(/images/piano.jpg);
+    background-position: center;
+    background-size: cover;
+   
 
+    & nav{
 
+        & ul{
+            @include FlexR;
+            justify-content: center;
+            padding-top: 2em;
+            
+            & li{
+                color: var(--blanc);
+                padding: .8em;
+                margin-top: 5em;
+                font-size: 1.2em;
+            }
+        }
+
+        & img{
+            width: 20%;
+            margin-right: 4em;
+        }
+
+        & a:hover{
+            border-bottom: 1px solid var(--or);
+        }
+    }
+}

@@ -1,0 +1,18 @@
+#entreprise{
+
+    & .contenu{
+        @include FlexR;
+
+        & p{
+            margin: auto;
+            font-size: 1.2em;
+            padding: 0 20em;
+        }
+
+        & img{
+            width: 30em;
+            height: auto;
+            margin-top: 2em;
+        }
+    }
+}

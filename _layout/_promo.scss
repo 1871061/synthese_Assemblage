@@ -1,3 +1,28 @@
 #promotion{
-    
+    position: relative;
+    & .contenu{
+        @include FlexR;
+
+        & p{
+            margin: auto;
+            margin-right: 12em;
+            padding: 4em;
+            font-size: 1.5em;
+
+            & span{
+                color: var(--or);
+                font-size: 1.6em;
+                
+            }
+        }
+    }
+    & img{
+        position: absolute;
+        object-fit: cover;
+        top: 0;
+        right: 0;
+        height: 100%;
+        width: 20em;
+    }
+
 }

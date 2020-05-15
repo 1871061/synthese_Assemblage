@@ -1,5 +1,6 @@
 p{
     color: var(--blanc);
+    font-family: 'Quicksand', sans-serif;
 }
 
 button, .button{
@@ -7,6 +8,16 @@ button, .button{
 }
 
 header > p{
-    width: 60%;
-    font-size: .8em;
+    width: 50%;
+    font-size: 1.1em;
+}
+
+form{
+    @include FlexC;
+
+        & input, textarea{
+            margin-top: .7em;
+            padding: .7em;
+            resize: none;
+        }
 }

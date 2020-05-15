@@ -1,0 +1,32 @@
+#livraison{
+
+    & .contenu{
+        @include FlexR;
+
+        & div{
+            padding: 3em;
+            margin-left: 5em;
+
+            & form{
+                width: 18em;
+                margin-right: auto;
+                margin-top: .9em;
+            }
+
+            & p{
+                font-size: 3em;
+                text-align: left;
+
+                & span{
+                    border-bottom: 2px solid var(--or);
+                }
+            }
+        }
+
+        & img{
+            width: 30em;
+            height: auto;
+            margin-top: 2em;
+        }
+    }
+}
