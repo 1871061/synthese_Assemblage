@@ -3,6 +3,24 @@
     & .contenu{
         padding: 5em;
         align-self: center;
+
+        &::after{
+            height: 2px;
+            display: block;
+            width: 100%;
+            background: var(--or);
+            content: '';
+            margin: 2em;
+        }
+
+        &::before{
+            height: 2px;
+            display: block;
+            width: 100%;
+            background: var(--or);
+            content: '';
+            margin: 2em ;
+        }
         
         & p{
             font-size: 2em;

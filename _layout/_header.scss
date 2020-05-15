@@ -1,6 +1,10 @@
 .hero{
-    
+    padding: 1em;
     background-color: var(--noir);
+
+    & i:hover{
+        color: var(--or);
+    }
 
     & ul{
         @include FlexR;

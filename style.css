@@ -51,8 +51,83 @@ div.interface {
       grid-template-areas: 'produits' 'heures' 'promotion' 'commande' 'livraison' 'entreprise' 'footer';
 }
 
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin: auto;
+}
+
+footer .socio {
+  margin-top: 4em;
+}
+
+footer .socio i {
+  font-size: 2em;
+  padding: 1em;
+}
+
+footer .socio i:hover {
+  color: var(--or);
+}
+
+footer .adresse {
+  margin: auto;
+}
+
+footer .adresse .ligne::after {
+  height: 2px;
+  display: block;
+  width: 70%;
+  background: var(--or);
+  content: '';
+  margin: 2em;
+}
+
+footer .adresse .ligne::before {
+  height: 2px;
+  display: block;
+  width: 70%;
+  background: var(--or);
+  content: '';
+  margin: 2em;
+}
+
+footer .adresse p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 1.8em;
+  padding: .5em;
+}
+
+footer form {
+  margin: auto;
+  font-size: 1.4em;
+}
+
+footer form h2 {
+  font-family: 'Great Vibes', cursive;
+  font-weight: 300;
+  font-size: 5em;
+  color: var(--blanc);
+}
+
+footer img {
+  margin-bottom: 4em;
+}
+
 .hero {
+  padding: 1em;
   background-color: var(--noir);
+}
+
+.hero i:hover {
+  color: var(--or);
 }
 
 .hero ul {
@@ -195,11 +270,19 @@ ________________________________________________________*/
   -ms-grid-column: 1;
   grid-area: footer;
   background-color: var(--charcoal);
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
 p {
   color: var(--blanc);
   font-family: 'Quicksand', sans-serif;
+}
+
+i {
+  color: var(--blanc);
 }
 
 button, .button {
@@ -239,11 +322,41 @@ form input, form textarea {
   resize: none;
 }
 
+h2 {
+  display: inline-block;
+}
+
+h2::after {
+  height: 2px;
+  display: block;
+  width: 100%;
+  background: var(--or);
+  content: '';
+}
+
 #heures .contenu {
   padding: 5em;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
+}
+
+#heures .contenu::after {
+  height: 2px;
+  display: block;
+  width: 100%;
+  background: var(--or);
+  content: '';
+  margin: 2em;
+}
+
+#heures .contenu::before {
+  height: 2px;
+  display: block;
+  width: 100%;
+  background: var(--or);
+  content: '';
+  margin: 2em;
 }
 
 #heures .contenu p {
@@ -357,14 +470,31 @@ form input, form textarea {
 }
 
 #entreprise .contenu p {
-  margin: auto;
   font-size: 1.2em;
-  padding: 0 20em;
+  padding: 0 10em;
+}
+
+#entreprise .contenu p::after {
+  height: 2px;
+  display: block;
+  width: 70%;
+  background: var(--or);
+  content: '';
+  margin: 2em;
+}
+
+#entreprise .contenu p::before {
+  height: 2px;
+  display: block;
+  width: 70%;
+  background: var(--or);
+  content: '';
+  margin: 2em;
 }
 
 #entreprise .contenu img {
   width: 30em;
-  height: auto;
+  height: 25em;
   margin-top: 2em;
 }
 /*# sourceMappingURL=style.css.map */

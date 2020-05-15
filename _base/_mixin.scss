@@ -31,3 +31,13 @@
             color: var(--or);
         }
 }
+
+@mixin message{
+    @include FlexC;
+
+    & input, textarea{
+        margin-top: .7em;
+        padding: .7em;
+        resize: none;
+    }
+}

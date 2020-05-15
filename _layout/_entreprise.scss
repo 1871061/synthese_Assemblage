@@ -4,14 +4,31 @@
         @include FlexR;
 
         & p{
-            margin: auto;
             font-size: 1.2em;
-            padding: 0 20em;
+            padding: 0 10em;
+
+            &::after{
+                height: 2px;
+                display: block;
+                width: 70%;
+                background: var(--or);
+                content: '';
+                margin: 2em;
+            }
+
+            &::before{
+                height: 2px;
+                display: block;
+                width: 70%;
+                background: var(--or);
+                content: '';
+                margin: 2em;
+            }
         }
 
         & img{
             width: 30em;
-            height: auto;
+            height: 25em;
             margin-top: 2em;
         }
     }

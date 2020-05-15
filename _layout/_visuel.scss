@@ -3,6 +3,10 @@ p{
     font-family: 'Quicksand', sans-serif;
 }
 
+i{
+    color: var(--blanc);
+}
+
 button, .button{
     @include button;
 }
@@ -13,11 +17,17 @@ header > p{
 }
 
 form{
-    @include FlexC;
+    @include message;
+}
 
-        & input, textarea{
-            margin-top: .7em;
-            padding: .7em;
-            resize: none;
-        }
+h2{
+    display: inline-block;
+}
+
+h2::after{
+    height: 2px;
+    display: block;
+    width: 100%;
+    background: var(--or);
+    content: '';
 }
