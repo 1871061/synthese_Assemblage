@@ -7,8 +7,7 @@ footer{
 
         & i{
             font-size: 2em;
-            padding: 1em;
-
+            margin: 1em;
             &:hover{
                 color: var(--or);
             }
@@ -50,12 +49,6 @@ footer{
         margin: auto;
         font-size: 1.4em;
 
-        & h2{
-            font-family: 'Great Vibes', cursive;
-            font-weight: 300;
-            font-size: 5em;
-            color:var(--blanc);
-        }
     }
 
     & img{

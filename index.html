@@ -47,10 +47,38 @@
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.  </p>
         </header>
         <div class="contenu">
+
             <div class="carousel">
-                <img src="/images/guitar.jpg" alt="">
-                <img src="/images/violon.jpg" alt="">
-                <img src="/images/cello.jpg" alt="">
+                <div class="mySlides fade">
+                    <img src="/images/guitar.jpg" alt="">
+                    <div class="text">Guitare Primo SX</div>
+                  </div>
+                
+                  <div class="mySlides fade">
+                    <img src="/images/violon.jpg" alt="">
+                    <div class="text">Violon "Black Swan"</div>
+                  </div>
+                
+                  <div class="mySlides fade">
+                    <img src="/images/cello.jpg" alt="">
+                    <div class="text">Violoncelle "Melodicus"</div>
+                  </div>
+                
+
+                  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+                <br>
+                
+
+                <div style="text-align:center">
+                  <span class="dot" onclick="currentSlide(1)"></span>
+                  <span class="dot" onclick="currentSlide(2)"></span>
+                  <span class="dot" onclick="currentSlide(3)"></span>
+                </div>
+                
+                
+                
             </div>
             <button><a href="#">En savoir plus</a></button>
         </div>
@@ -143,9 +171,9 @@
             <p>StudiObligato@hotmail.com</p>
         </div>
            <div class="socio">
-               <i class="fab fa-twitter"></i>
-               <i class="fab fa-youtube"></i>
-               <i class="fab fa-facebook-f"></i>
+               <a href=""><i class="fab fa-twitter"></i></a>
+               <a href=""><i class="fab fa-youtube"></i></a>
+               <a href=""><i class="fab fa-facebook-f"></i></a>
            </div>
     </div>
 

@@ -68,7 +68,7 @@ footer .socio {
 
 footer .socio i {
   font-size: 2em;
-  padding: 1em;
+  margin: 1em;
 }
 
 footer .socio i:hover {
@@ -108,13 +108,6 @@ footer .adresse p {
 footer form {
   margin: auto;
   font-size: 1.4em;
-}
-
-footer form h2 {
-  font-family: 'Great Vibes', cursive;
-  font-weight: 300;
-  font-size: 5em;
-  color: var(--blanc);
 }
 
 footer img {
@@ -157,11 +150,17 @@ footer img {
 }
 
 #produits .contenu img {
-  width: 250px;
+  width: 450px;
   height: 300px;
   margin: 3em;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+#produits button {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 /*////[Navigation principale]
@@ -214,13 +213,6 @@ ________________________________________________________*/
       -ms-flex-direction: column;
           flex-direction: column;
   padding: 8em;
-}
-
-#produits header h2, #heures header h2, #promotion header h2, #commande header h2, #livraison header h2, #entreprise header h2, #footer header h2 {
-  font-family: 'Great Vibes', cursive;
-  font-weight: 300;
-  font-size: 5em;
-  color: var(--blanc);
 }
 
 #produits {
@@ -324,6 +316,10 @@ form input, form textarea {
 
 h2 {
   display: inline-block;
+  font-family: 'Great Vibes', cursive;
+  font-weight: 300;
+  font-size: 5em;
+  color: var(--blanc);
 }
 
 h2::after {
@@ -494,7 +490,139 @@ h2::after {
 
 #entreprise .contenu img {
   width: 30em;
-  height: 25em;
+  height: auto;
   margin-top: 2em;
+}
+
+.carousel {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.carousel .mySlides {
+  display: none;
+}
+
+.carousel .mySlides .text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.carousel .prev, .carousel .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  -webkit-transition: 0.6s ease;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.carousel .prev.next, .carousel .next.next {
+  right: 0;
+}
+
+.carousel .prev.next:hover, .carousel .next.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.carousel .prev.prev, .carousel .next.prev {
+  left: 0;
+}
+
+.carousel .prev.prev:hover, .carousel .next.prev:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.dot {
+  cursor: pointer;
+  height: 5px;
+  width: 5px;
+  margin: 0 2px;
+  background-color: var(--blanc);
+  border-radius: 50%;
+  display: inline-block;
+  -webkit-transition: background-color 0.6s ease;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: var(--or);
+}
+
+.fade {
+  -webkit-animation-name: fade;
+          animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: .4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: .4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: var(--charcoal);
+  margin: auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 6em;
+}
+
+img {
+  width: 30em;
+}
+
+h2 {
+  padding: .5em;
+}
+
+form {
+  padding: 1.5em;
+}
+
+p {
+  padding: 1em;
+}
+
+p:hover {
+  color: var(--or);
 }
 /*# sourceMappingURL=style.css.map */
