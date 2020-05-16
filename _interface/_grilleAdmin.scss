@@ -1,0 +1,18 @@
+//----------------------------------------------------//
+//                                                    //
+//                // GRILLE ADMIN //                 //
+//               _grilleAdmin.scss                   //
+//----------------------------------------------------//
+
+/*////[Grille principale de la section admin]
+________________________________________________________*/
+div.interface{
+    display:grid;
+    grid-template-rows:auto auto;
+    grid-template-areas:
+        'menu' 'contenu'
+        'menu' 'contenu'
+        'menu' 'contenu'
+
+    ;
+}
