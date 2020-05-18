@@ -1,27 +1,89 @@
 body{
+    
+}
+
+
+
+#menu{
     @include FlexC;
-    background-color: var(--charcoal);
-    margin: auto;
-    align-items: center;
-    padding: 6em;
-}
+    text-align: center;
+    background-color: var(--noir);
+    padding-bottom: 11.1em;
 
-img{
-    width: 30em;
-}
-
-h2{
-    padding: .5em;
-}
-
-form{
-    padding: 1.5em;
-}
-
-p{
-    padding: 1em;
-
-    &:hover{
-        color: var(--or);
+    & img{
+        width: 20em;
+        align-self: center;
+        margin-top: 7em;
     }
+
+    & h2{
+        padding: 1em;
+    }
+
+    & ul{
+        margin: auto;
+        margin-top: -1em;
+        & li{
+            font-size: 2em;
+            color: var(--blanc);
+            list-style-type: none;
+            margin: 1.4em;
+    
+            &:hover{
+                color: var(--or);
+            }
+        }
+    }
+}
+
+#contenuAdmin{
+    background-color: var(--charcoal);
+    text-align: center;
+    
+    & h3{
+        font-size: 3em;
+        padding: 1em;
+    }
+
+    & span{
+        height: 2px;
+        display: block;
+        width: 10%;
+        background: var(--or);
+        content: '';
+        margin: auto;
+    }
+
+    & div{
+        @include FlexR;
+        justify-content: center;
+        align-items: center;
+
+        & p{
+            font-size: 2em;
+            padding: 1em;
+        }
+
+        & .box{
+            padding: .6em;
+            font-weight: 600;
+            font-size: 3em;
+            border: 1px solid var(--or);
+
+        }
+
+        & .btnCol{
+            @include FlexC;
+            margin-top: 6em;
+            & button{
+                margin: 1em;
+            }
+        }
+
+        & button{
+            padding: .3em;
+            font-size: 1em;
+        }
+    }
+
 }

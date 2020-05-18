@@ -53,12 +53,14 @@ div.interface {
 
 /*////[Grille principale de la section admin]
 ________________________________________________________*/
-div.interface {
+div.interfaceAdmin {
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: auto auto;
-      grid-template-rows: auto auto;
-      grid-template-areas: 'menu' 'contenu' 'menu' 'contenu' 'menu' 'contenu';
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+  -ms-grid-columns: 40% 60%;
+      grid-template-columns: 40% 60%;
+      grid-template-areas: 'menu' 'contenu';
 }
 
 footer {
@@ -278,7 +280,7 @@ ________________________________________________________*/
           flex-direction: row;
 }
 
-p {
+p, h3 {
   color: var(--blanc);
   font-family: 'Quicksand', sans-serif;
 }
@@ -288,6 +290,7 @@ i {
 }
 
 button, .button {
+  cursor: pointer;
   background-color: var(--or);
   border: 2px solid var(--blanc);
   padding: .3em;
@@ -338,6 +341,10 @@ h2::after {
   width: 100%;
   background: var(--or);
   content: '';
+}
+
+#menu .focus {
+  color: var(--or);
 }
 
 #heures .contenu {
@@ -600,7 +607,7 @@ h2::after {
   }
 }
 
-body {
+.connexion {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -613,26 +620,238 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 100vw;
+  height: 100vh;
   padding: 6em;
 }
 
-img {
+.connexion img {
   width: 30em;
 }
 
-h2 {
+.connexion h2 {
   padding: .5em;
 }
 
-form {
+.connexion form {
   padding: 1.5em;
 }
 
-p {
+.connexion p {
   padding: 1em;
 }
 
-p:hover {
+.connexion p:hover {
   color: var(--or);
+}
+
+#menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  background-color: var(--noir);
+  padding-bottom: 11.1em;
+}
+
+#menu img {
+  width: 20em;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin-top: 7em;
+}
+
+#menu h2 {
+  padding: 1em;
+}
+
+#menu ul {
+  margin: auto;
+  margin-top: -1em;
+}
+
+#menu ul li {
+  font-size: 2em;
+  color: var(--blanc);
+  list-style-type: none;
+  margin: 1.4em;
+}
+
+#menu ul li:hover {
+  color: var(--or);
+}
+
+#contenuAdmin {
+  background-color: var(--charcoal);
+  text-align: center;
+}
+
+#contenuAdmin h3 {
+  font-size: 3em;
+  padding: 1em;
+}
+
+#contenuAdmin span {
+  height: 2px;
+  display: block;
+  width: 10%;
+  background: var(--or);
+  content: '';
+  margin: auto;
+}
+
+#contenuAdmin div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#contenuAdmin div p {
+  font-size: 2em;
+  padding: 1em;
+}
+
+#contenuAdmin div .box {
+  padding: .6em;
+  font-weight: 600;
+  font-size: 3em;
+  border: 1px solid var(--or);
+}
+
+#contenuAdmin div .btnCol {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 6em;
+}
+
+#contenuAdmin div .btnCol button {
+  margin: 1em;
+}
+
+#contenuAdmin div button {
+  padding: .3em;
+  font-size: 1em;
+}
+
+#contenuAdmin {
+  padding-bottom: 3em;
+}
+
+#contenuAdmin form {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#contenuAdmin form div {
+  font-size: .5em;
+}
+
+#contenuAdmin form div img {
+  width: 18em;
+  height: 18em;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin: 3em;
+}
+
+#contenuAdmin form p {
+  font-size: 2.2em;
+  margin: .3em 2em .3em 0;
+}
+
+#contenuAdmin button {
+  font-size: .9em;
+}
+
+#contenuAdmin .ajouter {
+  margin-top: 1em;
+}
+
+#contenuAdmin .produit {
+  padding: 1em 5em;
+}
+
+#contenuAdmin .produit .modif {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: -3em;
+}
+
+#contenuAdmin .produit .modif .icone {
+  font-size: 2em;
+  margin-top: 1em;
+}
+
+#contenuAdmin .produit .modif .icone a {
+  margin: .2em;
+}
+
+#contenuAdmin .produit .modif .icone a i:hover {
+  color: var(--or);
+}
+
+#contenuAdmin .produit .modif .prix {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 2em;
+}
+
+#contenuAdmin .produit .modif .prix p {
+  padding: 0;
+}
+
+#contenuAdmin .produit .descritpion {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#contenuAdmin .produit .descritpion p {
+  padding: 3em;
+  font-size: 1em;
+  margin-top: -5em;
+  text-align: left;
+}
+
+#contenuAdmin .produit img {
+  width: 15em;
+  height: 15em;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 /*# sourceMappingURL=style.css.map */

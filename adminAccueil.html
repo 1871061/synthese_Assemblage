@@ -13,16 +13,40 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <section class="connexion">
-        <img src="/images/Logo.svg" alt="">
-        <h2>Module de gestion du site</h2>
-        <form action="">
-            <input type="text" value="Utilisateur">
-            <input type="text" value="Mot de passe">
-        </form>
-        <a href="adminAccueil.html"><button>Se connecter</button></a>
-        <a href=""><p>Mot de passe oublié?</p></a>
-    </section>
 
+<div class="interfaceAdmin">
+
+    
+<section id="menu">
+<a href="adminAccueil.html"><img src="/images/Logo.svg" alt=""></a>
+<h2>Vos Options</h2>
+<ul>
+    <a href=""><li>Afficher les commandes</li></a>
+    <a href="adminListe.html"><li>Afficher tous les produits</li></a>
+    <a href="adminCreation.html"><li>Ajouter un produit</li></a>
+</ul>
+</section>
+
+<section id="contenuAdmin">
+<h2>Module de gestion du site</h2>
+<h3>Vous avez</h3>
+
+<div>
+    <p class="box">3</p>
+    <p>Nouvelles Commandes</p>
+    <button>Afficher les commandes</button>
+</div>
+<span>ligne</span>
+<div>
+    <p class="box">12</p>
+    <p>Produits</p>
+    <div class="btnCol">
+        <button>Gérer les produits</button>
+        <a href="adminCreation.html"><button>Ajouter un nouveau produit</button></a>
+    </div>
+</div>
+
+</section>
+</div>
 </body>
 </html>

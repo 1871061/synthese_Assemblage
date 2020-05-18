@@ -1,0 +1,48 @@
+#contenuAdmin{
+
+    & .produit{
+        padding: 1em 5em;
+        & .modif{
+            @include FlexC;
+            margin-top: -3em;
+
+            & .icone{
+                font-size: 2em;
+                margin-top: 1em;
+
+                & a{
+                    margin: .2em;
+
+                    & i:hover{
+                        color: var(--or);
+                    }
+                }
+            }
+
+            & .prix{
+                @include FlexC;
+                margin-top: 2em;
+                & p{
+                   padding: 0; 
+                }
+            }
+        }
+
+        & .descritpion{
+            @include FlexC;
+
+            & p{
+                padding: 3em;
+                font-size: 1em;
+                margin-top: -5em;
+                text-align: left;
+            }
+        }
+
+        & img{
+            width: 15em;
+            height: 15em;
+            object-fit: cover;
+        }
+    }
+}

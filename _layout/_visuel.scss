@@ -1,4 +1,5 @@
-p{
+
+p, h3{
     color: var(--blanc);
     font-family: 'Quicksand', sans-serif;
 }
@@ -34,4 +35,10 @@ h2::after{
     width: 100%;
     background: var(--or);
     content: '';
+}
+
+#menu{
+    & .focus{
+        color: var(--or);
+    }
 }
