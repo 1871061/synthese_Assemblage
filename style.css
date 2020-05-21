@@ -63,6 +63,16 @@ div.interfaceAdmin {
       grid-template-areas: 'menu' 'contenu';
 }
 
+div.contenuListe {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+      grid-template-areas: 'col1';
+}
+
 footer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -345,6 +355,63 @@ h2::after {
 
 #menu .focus {
   color: var(--or);
+}
+
+.ariane {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  background-color: var(--or);
+  padding: 1em;
+}
+
+.ariane a p {
+  margin: 0em 1em;
+}
+
+.ariane a p:hover {
+  color: var(--noir);
+}
+
+.ariane p {
+  margin: 0em 1em;
+}
+
+#col1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-top: 4em;
+}
+
+#col1 .descritpion button {
+  margin-top: 1em;
+}
+
+#col1 .prix {
+  margin: 1em;
+  font-size: 1.4em;
+}
+
+#col1 h3 {
+  margin: 1.5em 0;
+  border-bottom: 1px solid var(--or);
+}
+
+#col1 img {
+  width: 15em;
+  height: 15em;
+  margin: 2em;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 #heures .contenu {
@@ -689,6 +756,10 @@ h2::after {
 #contenuAdmin {
   background-color: var(--charcoal);
   text-align: center;
+}
+
+#contenuAdmin h2 {
+  margin-top: .5em;
 }
 
 #contenuAdmin h3 {

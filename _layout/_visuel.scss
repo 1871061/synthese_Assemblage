@@ -42,3 +42,55 @@ h2::after{
         color: var(--or);
     }
 }
+
+.ariane{
+    @include FlexR;
+    background-color: var(--or);
+    padding: 1em;
+
+    & a{
+        
+        & p{
+            margin: 0em 1em;
+
+            &:hover{
+                color: var(--noir);
+            }
+        }
+    }
+
+    & p{
+        margin: 0em 1em;
+    }
+
+}
+
+#col1{
+    @include FlexR;
+    margin-top: 4em;
+
+    & .descritpion{
+
+        & button{
+            margin-top: 1em;
+        }
+    }
+
+    & .prix{
+        margin: 1em;
+        font-size: 1.4em;
+
+    }
+
+    & h3{
+        margin: 1.5em 0;
+        border-bottom: 1px solid var(--or);
+    }
+
+    & img{
+        width: 15em;
+        height: 15em;
+        margin: 2em;
+        object-fit: cover;
+    }
+}

@@ -17,6 +17,7 @@ body{
     }
 
     & h2{
+        
         padding: 1em;
     }
 
@@ -40,6 +41,10 @@ body{
     background-color: var(--charcoal);
     text-align: center;
     
+    & h2{
+        margin-top: .5em;
+    }
+
     & h3{
         font-size: 3em;
         padding: 1em;
