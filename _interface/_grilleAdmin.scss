@@ -11,6 +11,14 @@ div.interfaceAdmin{
     grid-template-rows:auto;
     grid-template-columns: 40% 60%;
     grid-template-areas:
-        'menu' 'contenu'
+        'menu contenuAdmin'
     ;
+}
+
+#menu{
+    grid-area: menu;
+}
+
+#contenu{
+    grid-area: contenuAdmin;
 }

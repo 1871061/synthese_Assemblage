@@ -60,7 +60,19 @@ div.interfaceAdmin {
       grid-template-rows: auto;
   -ms-grid-columns: 40% 60%;
       grid-template-columns: 40% 60%;
-      grid-template-areas: 'menu' 'contenu';
+      grid-template-areas: 'menu contenuAdmin';
+}
+
+#menu {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: menu;
+}
+
+#contenu {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: contenuAdmin;
 }
 
 div.contenuListe {
@@ -70,7 +82,43 @@ div.contenuListe {
       grid-template-rows: auto;
   -ms-grid-columns: 50% 50%;
       grid-template-columns: 50% 50%;
-      grid-template-areas: 'col1';
+      grid-template-areas: 'col1 col2' 'col3 col4' 'col5 col6';
+}
+
+#col1 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: col1;
+}
+
+#col2 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: col2;
+}
+
+#col3 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: col3;
+}
+
+#col4 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: col4;
+}
+
+#col5 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: col5;
+}
+
+#col6 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+  grid-area: col6;
 }
 
 footer {
@@ -381,7 +429,7 @@ h2::after {
   margin: 0em 1em;
 }
 
-#col1 {
+#col1, #col2, #col3, #col4, #col5, #col6 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -392,21 +440,21 @@ h2::after {
   margin-top: 4em;
 }
 
-#col1 .descritpion button {
+#col1 .descritpion button, #col2 .descritpion button, #col3 .descritpion button, #col4 .descritpion button, #col5 .descritpion button, #col6 .descritpion button {
   margin-top: 1em;
 }
 
-#col1 .prix {
+#col1 .prix, #col2 .prix, #col3 .prix, #col4 .prix, #col5 .prix, #col6 .prix {
   margin: 1em;
   font-size: 1.4em;
 }
 
-#col1 h3 {
+#col1 h3, #col2 h3, #col3 h3, #col4 h3, #col5 h3, #col6 h3 {
   margin: 1.5em 0;
   border-bottom: 1px solid var(--or);
 }
 
-#col1 img {
+#col1 img, #col2 img, #col3 img, #col4 img, #col5 img, #col6 img {
   width: 15em;
   height: 15em;
   margin: 2em;
@@ -922,6 +970,58 @@ h2::after {
 #contenuAdmin .produit img {
   width: 15em;
   height: 15em;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.ficheProduit {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.ficheProduit h2 {
+  margin: 1em 0 1em 0;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.ficheProduit .fiche {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.ficheProduit .fiche p {
+  font-size: 1.5em;
+  padding: 2em;
+}
+
+.ficheProduit .fiche button {
+  margin-left: 2em;
+}
+
+.ficheProduit .fiche .prix {
+  padding: 2.5em;
+}
+
+.ficheProduit .fiche .prix p {
+  padding: 0;
+  font-size: 2em;
+}
+
+.ficheProduit .fiche img {
+  width: 30em;
+  height: 30em;
   -o-object-fit: cover;
      object-fit: cover;
 }
