@@ -38,23 +38,25 @@
 
     <div>
         <p>Image</p>
-        <picture>
-            <source media="(max-width: 1280px)" srcset="images/guitar-1280.jpg">
-            <source media="(min-width: 1281px)" srcset="images/guitar-1600.jpg">
-            <img src="images/guitar-1280.jpg" alt="">
-        </picture>
+        <div class="colonne">
+            <picture>
+                <source media="(max-width: 1280px)" srcset="images/guitar-1280.jpg">
+                <source media="(min-width: 1281px)" srcset="images/guitar-1600.jpg">
+                <img src="images/guitar-1280.jpg" alt="">
+            </picture>
+            <button>Parcourir</button>
+        </div>
     </div>
-    <button>Parcourir</button>
 
     <div>
         <p>Prix</p>
         <input type="text" value="75$">
     </div>
 
-
-    <p>Description</p>
-    <textarea name="Message" id="message" cols="40" rows="10">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam id est scelerisque, vulputate urna sed, euismod sem. Praesent sollicitudin urna eget semper dignissim. Fusce eu malesuada odio, porta rutrum sem. In commodo bibendum erat, at mattis leo mollis eget. Fusce vitae nulla eget ex bibendum finibus in nec ligula. Vivamus tellus mi, malesuada eget ex vitae, hendrerit elementum tortor. Donec vel tellus eget lectus iaculis ornare. Aliquam feugiat felis facilisis, facilisis lorem vel, suscipit purus. Aliquam eget finibus tellus.</textarea>
-
+    <div class="colonneDesc">
+        <p>Description</p>
+        <textarea name="Message" id="message" cols="40" rows="10">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam id est scelerisque, vulputate urna sed, euismod sem. Praesent sollicitudin urna eget semper dignissim. Fusce eu malesuada odio, porta rutrum sem. In commodo bibendum erat, at mattis leo mollis eget. Fusce vitae nulla eget ex bibendum finibus in nec ligula. Vivamus tellus mi, malesuada eget ex vitae, hendrerit elementum tortor. Donec vel tellus eget lectus iaculis ornare. Aliquam feugiat felis facilisis, facilisis lorem vel, suscipit purus. Aliquam eget finibus tellus.</textarea>
+    </div>
 </form>
 <button class="ajouter">Ajouter</button>
 

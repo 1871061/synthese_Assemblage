@@ -75,6 +75,7 @@
             @include FlexC;
             margin-top: 6em;
             & button{
+                @extend button;
                 margin: 1em;
             }
         }
