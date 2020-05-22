@@ -263,6 +263,10 @@ ________________________________________________________*/
   font-size: 1.2em;
 }
 
+.teteAffiche nav ul li.home {
+  display: none;
+}
+
 .teteAffiche nav img {
   width: 20%;
   margin-right: 4em;
@@ -276,29 +280,29 @@ ________________________________________________________*/
   border-bottom: 1px solid var(--or);
 }
 
-.navbar {
-  display: none;
-  overflow: hidden;
-  background-color: var(--or);
-  z-index: 200;
-}
-
-.navbar nav ul {
-  padding: 1em;
-}
-
-.navbar nav ul a:hover {
-  border-bottom: 1px solid var(--noir);
-}
-
-.navbar nav ul li {
-  margin-top: 0;
-}
-
 .sticky {
   position: fixed;
   top: 0;
   width: 100%;
+  background-color: var(--or);
+  z-index: 200;
+  overflow: hidden;
+}
+
+.sticky nav ul {
+  padding: 1em;
+}
+
+.sticky nav ul img {
+  display: none;
+}
+
+.sticky nav ul a:hover {
+  border-bottom: 1px solid var(--noir);
+}
+
+.sticky nav ul li {
+  margin-top: 0;
 }
 
 /*////[Les zones de contenu]
@@ -311,7 +315,7 @@ ________________________________________________________*/
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 8em;
+  padding: 4em;
 }
 
 #produits {
@@ -467,10 +471,12 @@ h2::after {
       -ms-flex-direction: row;
           flex-direction: row;
   margin-top: 4em;
+  overflow: hidden;
 }
 
 #col1 .descritpion button, #col2 .descritpion button, #col3 .descritpion button, #col4 .descritpion button, #col5 .descritpion button, #col6 .descritpion button {
   margin-top: 1em;
+  font-size: 1em;
 }
 
 #col1 .prix, #col2 .prix, #col3 .prix, #col4 .prix, #col5 .prix, #col6 .prix {
@@ -650,9 +656,11 @@ h2::after {
 }
 
 #entreprise .contenu img {
-  width: 30em;
-  height: auto;
+  width: 25em;
+  height: 25em;
   margin-top: 2em;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .carousel {

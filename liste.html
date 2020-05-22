@@ -28,31 +28,20 @@
     </header>
 
     <section class="teteAffiche">
-        <nav>
-            <ul>
-                <img src="/images/Logo.svg" alt="">
-                <li><a href="index.html">Nos produits</a></li>
-                <li><a href="index.html">Heures d'ouverture</a></li>
-                <li><a href="index.html">Promotion</a></li>
-                <li><a href="index.html">Comment Commander</a></li>        
-                <li><a href="index.html">Livraison</a></li>    
-                <li><a href="index.html">L'entreprise</a></li>
-                    
-            </ul>
-       </nav>
-       <div class="navbar">
-        <nav>
-            <ul>
-                <li><a href="index.html">Nos produits</a></li>
-                <li><a href="index.html">Heures d'ouverture</a></li>
-                <li><a href="index.html">Promotion</a></li>
-                <li><a href="index.html">Comment Commander</a></li>        
-                <li><a href="index.html">Livraison</a></li>    
-                <li><a href="index.html">L'entreprise</a></li>
-                <li><a href="index.html"><i class="fas fa-home"></i></a></li>
-            </ul>
-       </nav>
-    </div>
+        <div class="navbar">
+            <nav>
+                <ul>
+                    <img src="/images/Logo.svg" alt="">
+                    <li><a href="index.html">Nos produits</a></li>
+                    <li><a href="index.html">Heures d'ouverture</a></li>
+                    <li><a href="index.html">Promotion</a></li>
+                    <li><a href="index.html">Comment Commander</a></li>        
+                    <li><a href="index.html">Livraison</a></li>    
+                    <li><a href="index.html">L'entreprise</a></li>
+                    <li class="home"><a href="#top"><i class="fas fa-home"></i></a></li>   
+                </ul>
+           </nav>
+        </div>
     </section>
 
     <div class="ariane">
@@ -63,13 +52,17 @@
 
    <div class="interface">
     <section id="produits">
-        <header>
+        <header data-aos="fade-right">
             <h2>Nos produits</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.  </p>
         </header>
         <div class="contenuListe">
             <div id="col1">
-                <img src="/images/guitar.jpg" alt="">
+                <picture>
+                    <source media="(max-width: 1280px)" srcset="images/guitar-1280.jpg">
+                    <source media="(min-width: 1281px)" srcset="images/guitar-1600.jpg">
+                    <img src="images/guitar-1280.jpg" alt="">
+                </picture>
 
                 <div class="descritpion">
                     <h3>Guitare Primo SX</h3>
@@ -83,7 +76,11 @@
   
             </div>
             <div id="col2">
-                <img src="/images/cello.jpg" alt="">
+                <picture>
+                    <source media="(max-width: 1280px)" srcset="images/cello-1280.jpg">
+                    <source media="(min-width: 1281px)" srcset="images/cello-1600.jpg">
+                    <img src="images/cello-1280.jpg" alt="">
+                </picture>
 
                 <div class="descritpion">
                     <h3>Violoncelle "Melodicus"</h3>
@@ -96,7 +93,11 @@
                 </div>
             </div>
             <div id="col3">
-                <img src="/images/pianoProduit.jpg" alt="">
+                <picture>
+                    <source media="(max-width: 1280px)" srcset="images/pianoPr-1280.jpg">
+                    <source media="(min-width: 1281px)" srcset="images/pianoPr-1600.jpg">
+                    <img src="images/pianoPr-1280.jpg" alt="">
+                </picture>
 
                 <div class="descritpion">
                     <h3>Piano "Guertenber"</h3>
@@ -109,7 +110,11 @@
                 </div>
             </div>
             <div id="col4">
-                <img src="/images/violon.jpg" alt="">
+                <picture>
+                    <source media="(max-width: 1280px)" srcset="images/violon-1280.jpg">
+                    <source media="(min-width: 1281px)" srcset="images/violon-1600.jpg">
+                    <img src="images/violon-1280.jpg" alt="">
+                </picture>
 
                 <div class="descritpion">
                     <h3>Violon "Black Swan"</h3>
@@ -123,7 +128,11 @@
                 </div>
             </div>
             <div id="col5">
-                <img src="/images/micro.jpg" alt="">
+                <picture>
+                    <source media="(max-width: 1280px)" srcset="images/micro-1280.jpg">
+                    <source media="(min-width: 1281px)" srcset="images/micro-1600.jpg">
+                    <img src="images/micro-1280.jpg" alt="">
+                </picture>
 
                 <div class="descritpion">
                     <h3>Microphone "VoiX"</h3>
@@ -137,7 +146,11 @@
                 </div>
             </div>
             <div id="col6">
-                <img src="/images/trompette.jpg" alt="">
+                <picture>
+                    <source media="(max-width: 1280px)" srcset="images/trompette-1280.jpg">
+                    <source media="(min-width: 1281px)" srcset="images/trompette-1600.jpg">
+                    <img src="images/trompette-1280.jpg" alt="">
+                </picture>
 
                 <div class="descritpion">
                     <h3>Trompette "Fyre"</h3>
@@ -157,7 +170,7 @@
     </section>
 
     <section id="commande">
-        <header>
+        <header data-aos="fade-right">
             <h2>Comment commander?</h2>
         </header>
         <ul class="etapes">
@@ -170,13 +183,17 @@
     </section>
 
     <section id="livraison">
-        <header>
+        <header data-aos="fade-right">
             <h2>Livraison</h2>
             <p>Sed placerat tristique odio, a dictum urna posuere eu. </p>
         </header>
 
         <div class="contenu">
-            <img src="/images/boite.jpg" alt="">
+            <picture>
+                <source media="(max-width: 1280px)" srcset="images/boite-1280.jpg">
+                <source media="(min-width: 1281px)" srcset="images/boite-1600.jpg">
+                <img src="images/boite-1280.jpg" alt="">
+            </picture>
             <div>
                 <p>Lorem ipsum dolor sit amet, consectetur.</br>
                 <span>10KM</span></p>

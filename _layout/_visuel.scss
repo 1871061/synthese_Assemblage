@@ -65,14 +65,16 @@ h2::after{
 
 }
 
+
 #col1, #col2, #col3, #col4, #col5, #col6{
     @include FlexR;
     margin-top: 4em;
-
+    overflow: hidden;
     & .descritpion{
 
         & button{
             margin-top: 1em;
+            font-size: 1em;
         }
     }
 

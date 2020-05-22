@@ -3,6 +3,26 @@
  * 
  */
 
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * Sticky
+ * 
+ */
+
+$(window).scroll(function(){
+
+  if ($(window).scrollTop() > 100) {
+    $('.navbar').addClass("sticky")
+    $('.home').slideDown();
+  } else {
+    $('.navbar').removeClass("sticky");
+    $('.home').slideUp();
+  }
+})
+
+
  /* * * * * * * * * * * * * * * * * * * * * * * * * * * *
  * Carousel
  * 
@@ -37,36 +57,4 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
 }
-/* * * * * * * * * * * * * * * * * * * * * * * * * * * * */
-
-/* * * * * * * * * * * * * * * * * * * * * * * * * * * *
- * Sticky
- * 
- */
-
-$(window).scroll(function(){
-
-  if ($(window).scrollTop() > 200) {
-    $('.navbar').addClass("sticky")
-    $('.navbar').fadeIn();
-  } else {
-    $('.navbar').removeClass("sticky");
-    $('.navbar').fadeOut();
-  }
-})
-$(window).scroll(function(){
-
-  if ($(window).scrollTop() > 200) {
-    $('.navbars').addClass("sticky")
-    $('.navbars').fadeIn();
-  } else {
-    $('.navbars').removeClass("sticky");
-    $('.navbars').fadeOut();
-  }
-})
-
-
-/* * * * * * * * * * * * * * * * * * * * * * * * * * * * */
-
-
 

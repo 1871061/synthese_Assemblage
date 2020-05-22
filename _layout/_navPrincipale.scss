@@ -12,7 +12,6 @@ ________________________________________________________*/
     background-position: center;
     background-size: cover;
    
-
     & nav{
 
         & ul{
@@ -25,6 +24,9 @@ ________________________________________________________*/
                 padding: .8em;
                 margin-top: 5em;
                 font-size: 1.2em;
+                &.home{
+                    display: none;
+                }
             }
         }
 
@@ -41,16 +43,24 @@ ________________________________________________________*/
     }
 }
 
-.navbar {
-    display: none;
-    overflow: hidden;
+
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
     background-color: var(--or);
     z-index: 200;
+    overflow: hidden;
 
     & nav{
 
         & ul{
             padding: 1em;
+
+            & img{
+                display: none;
+            }
+            
             & a:hover{
                 border-bottom: 1px solid var(--noir);
             }
@@ -61,11 +71,5 @@ ________________________________________________________*/
         }
 
       }
-    }
-
-  .sticky {
-    position: fixed;
-    top: 0;
-    width: 100%;
   }
   

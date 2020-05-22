@@ -27,9 +27,10 @@
         }
 
         & img{
-            width: 30em;
-            height: auto;
+            width: 25em;
+            height: 25em;
             margin-top: 2em;
+            object-fit: cover;
         }
     }
 }

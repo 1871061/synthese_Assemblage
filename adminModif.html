@@ -38,7 +38,11 @@
 
     <div>
         <p>Image</p>
-        <img src="/images/guitar.jpg" alt="">
+        <picture>
+            <source media="(max-width: 1280px)" srcset="images/guitar-1280.jpg">
+            <source media="(min-width: 1281px)" srcset="images/guitar-1600.jpg">
+            <img src="images/guitar-1280.jpg" alt="">
+        </picture>
     </div>
     <button>Parcourir</button>
 
