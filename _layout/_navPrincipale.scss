@@ -7,7 +7,7 @@
 /*////[Navigation principale]
 ________________________________________________________*/
 .teteAffiche{
-    height: 80vh;
+    height: 100vh;
     background-image: url(/images/piano.jpg);
     background-position: center;
     background-size: cover;
@@ -34,7 +34,38 @@ ________________________________________________________*/
         }
 
         & a:hover{
+            animation: fadeIn;
+            animation-duration: 0.6s;
             border-bottom: 1px solid var(--or);
         }
     }
 }
+
+.navbar {
+    display: none;
+    overflow: hidden;
+    background-color: var(--or);
+    z-index: 200;
+
+    & nav{
+
+        & ul{
+            padding: 1em;
+            & a:hover{
+                border-bottom: 1px solid var(--noir);
+            }
+        
+            & li{
+                margin-top: 0;
+            }
+        }
+
+      }
+    }
+
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  

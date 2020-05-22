@@ -10,11 +10,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
     <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <nav class="hero">
+        <nav class="hero" id="top">
             <ul>
                 <li>EN</li>
                 <li>/</li>
@@ -38,12 +40,27 @@
                     
             </ul>
        </nav>
+
+       <div class="navbar">
+           <nav>
+               <ul>
+                   <li><a href="#produits">Nos produits</a></li>
+                   <li><a href="#heures">Heures d'ouverture</a></li>
+                   <li><a href="#promotion">Promotion</a></li>
+                   <li><a href="#commande">Comment Commander</a></li>        
+                   <li><a href="#livraison">Livraison</a></li>    
+                   <li><a href="#entreprise">L'entreprise</a></li>
+                   <li><a href="#top"><i class="fas fa-home"></i></a></li>
+               </ul>
+          </nav>
+       </div>
     </section>
+
 
    <div class="interface">
     <section id="produits">
-        <header>
-            <h2>Nos produits</h2>
+        <header data-aos="fade-right">
+            <h2 >Nos produits</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.  </p>
         </header>
         <div class="contenu">
@@ -85,7 +102,7 @@
     </section>
 
     <section id="heures">
-        <header>
+        <header data-aos="fade-right">
             <h2>Heures d'ouverture</h2>
             <p>Curabitur sollicitudin viverra tortor, pharetra dignissim velit aliquet facilisis. Ut cursus eros ut ex congue fermentum. Duis fermentum porta fringilla. Integer lacinia quam est, a fermentum mi auctor a. </p>
         </header>
@@ -101,7 +118,7 @@
     </section>
 
     <section id="promotion">
-        <header>
+        <header data-aos="fade-right">
             <h2>Promotion</h2>
             <p>Aliquam consequat at ipsum vitae finibus. Curabitur porta sagittis enim et fringilla. Interdum et malesuada fames ac ante ipsum primis in faucibus. </p>
         </header>
@@ -111,11 +128,11 @@
             </br></br>
             À l’achat d’un <span>nouvel instrument</span> de musique obtenez l’accès gratuit pendant <span>3 mois</span> à des cours en ligne! Devenir un virtuose n’aura jamais été aussi simple!</p>
         </div>
-        <img src="/images/partition.jpg" alt="">
+        <img src="/images/partition.jpg" alt="" >
     </section>
 
     <section id="commande">
-        <header>
+        <header data-aos="fade-right">
             <h2>Comment commander?</h2>
         </header>
         <ul class="etapes">
@@ -128,7 +145,7 @@
     </section>
 
     <section id="livraison">
-        <header>
+        <header data-aos="fade-right">
             <h2>Livraison</h2>
             <p>Sed placerat tristique odio, a dictum urna posuere eu. </p>
         </header>
@@ -147,7 +164,7 @@
     </section>
 
     <section id="entreprise">
-        <header>
+        <header data-aos="fade-right">
             <h2>L'entreprise</h2>
             <p> In hac habitasse platea dictumst. Pellentesque vitae interdum justo. Quisque pellentesque arcu est, eu lobortis leo accumsan nec. </p>
         </header>
@@ -186,6 +203,10 @@
         <input type="submit" class="button">
        </form>
    </footer>
+   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="js/eventAnimationScript.js"></script>
+    <script>
+        AOS.init();
+      </script>
 </body>
 </html>

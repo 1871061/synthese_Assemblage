@@ -10,12 +10,14 @@
                 font-size: 2em;
                 margin-top: 1em;
 
+                & i:hover{
+                    cursor: pointer;
+                    color: var(--or);
+                }
+
                 & a{
                     margin: .2em;
 
-                    & i:hover{
-                        color: var(--or);
-                    }
                 }
             }
 

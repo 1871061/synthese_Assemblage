@@ -3,6 +3,12 @@
  * 
  */
 
+ /* * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * Carousel
+ * 
+ */
+
+ 
 var slideIndex = 1;
 showSlides(slideIndex);
 
@@ -31,6 +37,36 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
 }
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * Sticky
+ * 
+ */
+
+$(window).scroll(function(){
+
+  if ($(window).scrollTop() > 200) {
+    $('.navbar').addClass("sticky")
+    $('.navbar').fadeIn();
+  } else {
+    $('.navbar').removeClass("sticky");
+    $('.navbar').fadeOut();
+  }
+})
+$(window).scroll(function(){
+
+  if ($(window).scrollTop() > 200) {
+    $('.navbars').addClass("sticky")
+    $('.navbars').fadeIn();
+  } else {
+    $('.navbars').removeClass("sticky");
+    $('.navbars').fadeOut();
+  }
+})
+
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * */
 
 
 

@@ -13,7 +13,29 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="interfaceAdmin">
+
+<div id="SupPopup" class="popup">
+
+  <div class="popup-contenu">
+    <span class="close">&times;</span>
+    <h3>Voulez vous supprimer cet article?</h3>
+    <div class="produit">
+        <img src="/images/cello.jpg" alt="">
+
+        <div class="description">
+            <h3>Violoncelle "Melodicus"</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam id est scelerisque, vulputate urna sed, euismod sem. Praesent sollicitudin urna eget semper dignissim. Fusce eu malesuada odio, porta rutrum sem. In commodo bibendum erat, at mattis leo mollis eget. Fusce vitae nulla eget ex bibendum finibus in nec ligula. Vivamus tellus mi, malesuada eget ex vitae, hendrerit elementum tortor. Donec vel tellus eget lectus iaculis ornare. Aliquam feugiat felis facilisis, facilisis lorem vel, suscipit purus. Aliquam eget finibus tellus.</p>
+        </div>
+    </div>
+        <div class="option">
+            <button>Supprimer</button>
+            <button>Annuler</button>
+        </div>
+  </div>
+
+</div>
+
+<div class="interfaceAdmin">
 
     
 <section id="menu">
@@ -40,7 +62,7 @@
     <div class="modif">
         <div class="icone">
             <a href="adminModif.html"><i class="fas fa-edit"></i></a>
-            <a href=""><i class="fas fa-minus-circle"></i></i></a>
+            <i class="fas fa-minus-circle"></i>
         </div>
 
         <div class="prix">
@@ -63,7 +85,7 @@
     <div class="modif">
         <div class="icone">
             <a href="adminModif.html"><i class="fas fa-edit"></i></a>
-            <a href=""><i class="fas fa-minus-circle"></i></a>
+            <i class="fas fa-minus-circle"></i>
         </div>
 
         <div class="prix">
@@ -86,7 +108,7 @@
     <div class="modif">
         <div class="icone">
             <a href="adminModif.html"><i class="fas fa-edit"></i></a>
-            <a href=""><i class="fas fa-minus-circle"></i></a>
+            <i class="fas fa-minus-circle"></i>
         </div>
 
         <div class="prix">
@@ -100,5 +122,34 @@
 
 </section>
 </div>
+<script>
+    var popup = document.getElementById("SupPopup");
+    
+    var btn = document.getElementsByClassName("fas fa-minus-circle");
+    
+    var span = document.getElementsByClassName("close")[0];
+    
+    btn[0].onclick = function() {
+      popup.style.display = "block";
+    }
+    
+    btn[1].onclick = function() {
+      popup.style.display = "block";
+    }
+
+    btn[2].onclick = function() {
+      popup.style.display = "block";
+    }
+    
+    span.onclick = function() {
+      popup.style.display = "none";
+    }
+    
+    window.onclick = function(event) {
+      if (event.target == popup) {
+        popup.style.display = "none";
+      }
+    }
+    </script>
 </body>
 </html>
